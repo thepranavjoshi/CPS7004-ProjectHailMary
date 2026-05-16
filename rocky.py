@@ -29,6 +29,7 @@ class RockyAgent(Agent):
         self.repairs_completed   = 0
         self.knowledge_shared    = 0
         self.fuel_transferred    = 0
+        self.xenonite_materials  = 100   # xenonite for repairs and tunnel maintenance
 
         # Sonar chord communication system
         self.chord_vocabulary    = {}     # maps concepts to chord patterns
@@ -105,6 +106,9 @@ class RockyAgent(Agent):
         grace.restore_energy(repair_amount)
         grace.restore_health(int(repair_amount * 0.5))
         self.repairs_completed += 1
+        self.xenonite_materials  = max(0, self.xenonite_materials - 5)
+        if self.xenonite_materials == 0:
+            log("Rocky: xenonite materials exhausted — repairs compromised.")
         self.record_reward('repair', REWARD_REPAIR)
         log(f"Rocky repairs systems — Grace energy +{repair_amount} | "
             f"Engineering skill: {self.engineering_skill:.2f}")
@@ -202,6 +206,7 @@ class RockyAgent(Agent):
             'cooperation_trust': round(self.cooperation_trust, 3),
             'fuel_reserves':     self.fuel_reserves,
             'repairs_completed': self.repairs_completed,
+            'xenonite_materials': self.xenonite_materials,
             'knowledge_shared':  self.knowledge_shared,
             'fuel_transferred':  self.fuel_transferred,
             'strategy':          self.strategy,
