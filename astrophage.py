@@ -65,8 +65,11 @@ class AstrophageSystem:
         self.taumoeba_deployed  = True
         self.resistance_level   = min(1.0, self.resistance_level + 0.1)
         self.base_spread_rate   = min(0.25, self.base_spread_rate + 0.02)
-        log(f"Astrophage adapts! Resistance: {self.resistance_level:.2f} | "
-            f"Spread rate: {self.base_spread_rate:.3f}")
+        log(f"Astrophage adapts! Resistance: {self.resistance_level:.2f} | Spread rate: {self.base_spread_rate:.3f}")
+        if self.resistance_level >= 0.8:
+            log("*** CRITICAL: Astrophage resistance SEVERE — Taumoeba effectiveness critically compromised ***")
+        elif self.resistance_level >= 0.5:
+            log("*** WARNING: Astrophage resistance HIGH — Taumoeba breeding must accelerate ***")
 
     # ── Agent drain ──────────────────────────────────────────────
 
