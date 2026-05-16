@@ -1,0 +1,21 @@
+run_id,turns_survived,end_reason,mission_complete,knowledge_score,breeding_progress,viable_strain_found,experiments_run,experiment_success,success_rate,beetles_deployed,beetles_reached_earth,astrophage_cells,rocky_repairs,rocky_knowledge_shared,grace_alive
+1,59,Mission Complete — Earth saved!,True,150,1.0,True,15,8,0.533,0,0,683,0,39,True
+2,200,Time limit reached.,False,200,0.09,False,2,1,0.5,0,0,1946,0,1091,True
+3,200,Time limit reached.,False,200,0.108,False,2,1,0.5,0,0,2200,0,598,True
+4,28,Mission Abort — Grace ran out of energy/health.,False,56,0.135,False,3,1,0.333,1,0,405,0,27,False
+5,41,Mission Abort — Grace ran out of energy/health.,False,79,0.245,False,5,2,0.4,0,0,482,0,30,False
+6,200,Time limit reached.,False,200,0.048,False,1,0,0.0,0,0,2140,0,784,True
+7,200,Time limit reached.,False,200,0.052,False,3,0,0.0,0,0,2062,0,211,True
+8,21,Mission Abort — Grace ran out of energy/health.,False,27,0.0,False,0,0,0.0,0,0,297,0,15,False
+9,99,Mission Abort — Grace ran out of energy/health.,False,188,0.0,False,3,0,0.0,0,0,1136,0,107,False
+10,42,Mission Complete — Earth saved!,True,163,1.0,True,15,8,0.533,0,0,540,0,52,True
+11,200,Time limit reached.,False,200,0.089,False,3,0,0.0,0,0,2204,0,637,True
+12,65,Mission Complete — Earth saved!,True,151,1.0,True,14,9,0.643,2,2,718,0,46,True
+13,200,Time limit reached.,False,200,0.03,False,2,0,0.0,0,0,2123,0,974,True
+14,22,Mission Abort — Grace ran out of energy/health.,False,30,0.0,False,0,0,0.0,0,0,329,0,15,False
+15,41,Mission Abort — Grace ran out of energy/health.,False,67,0.107,False,4,1,0.25,0,0,463,0,35,False
+16,49,Mission Complete — Earth saved!,True,165,1.0,True,15,7,0.467,1,0,577,0,52,True
+17,200,Time limit reached.,False,200,0.448,False,8,2,0.25,0,0,1977,0,611,True
+18,58,Mission Abort — Grace ran out of energy/health.,False,171,0.147,False,2,1,0.5,0,0,669,0,101,False
+19,42,Mission Abort — Grace ran out of energy/health.,False,103,0.466,False,7,4,0.571,0,0,503,0,38,False
+20,47,Mission Complete — Earth saved!,True,179,1.0,True,16,8,0.5,1,0,551,0,72,True
