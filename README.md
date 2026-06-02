@@ -15,6 +15,7 @@ pip3.12 install matplotlib
 ## Running the Simulation
 ```bash
 python3.12 main.py
+python3.12 visualisation.py
 ```
 
 ## Project Structure
